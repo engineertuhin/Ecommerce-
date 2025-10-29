@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-900">E-Shop</a>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-blue-600 font-medium">Home</a>
+                <a href="products.html" class="text-gray-700 hover:text-blue-600">Shop</a>
+                <a href="categories.html" class="text-gray-700 hover:text-blue-600">Categories</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+                <a href="cart.html" class="flex items-center text-gray-700 hover:text-blue-600">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <span class="ml-1 bg-blue-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+            <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-gray-100">Home</a>
+            <a href="products.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Shop</a>
+            <a href="categories.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Categories</a>
+            <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="cart.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Cart (3)</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative h-[600px] w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=2670');">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center">
+                <h1 class="text-white text-4xl md:text-6xl font-bold text-center">Summer Collection is Here</h1>
+                <p class="text-white text-lg md:text-2xl mt-4 text-center">Discover the latest trends in fashion.</p>
+                <a href="products.html" class="mt-8 px-8 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                    Shop Now
+                </a>
+            </div>
+        </section>
+        
+        <section class="bg-gray-100 py-12">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <svg class="h-10 w-10 text-blue-600 mb-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2-2h8zM17 8h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1v1a1 1 0 102 0v-1m-6 0v1a1 1 0 102 0v-1" />
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-900">Free Shipping</h3>
+                        <p class="text-gray-600 mt-1">On all orders over $50</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <svg class="h-10 w-10 text-blue-600 mb-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9H4V4m0 5a8.001 8.001 0 0015.356 2m-1.06 4A8.001 8.001 0 004 15v5h.582m15.356-2a8.001 8.001 0 00-15.356-2H20v-5m0 5a8.001 8.001 0 00-15.356-2" />
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-900">Easy Returns</h3>
+                        <p class="text-gray-600 mt-1">30-day return policy</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <svg class="h-10 w-10 text-blue-600 mb-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-900">Secure Payments</h3>
+                        <p class="text-gray-600 mt-1">Your data is 100% safe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Featured Products</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&q=80&w=2670" alt="Vintage Graphic Tee" class="w-full h-80 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800">Vintage Graphic Tee</h3>
+                            <p class="text-gray-600 text-lg mt-2">$29.99</p>
+                            <a href="product-detail.html" class="mt-4 inline-block px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-md hover:bg-gray-900">View Details</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810ABA3?auto=format&fit=crop&q=80&w=2670" alt="Minimalist Sneakers" class="w-full h-80 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800">Minimalist Sneakers</h3>
+                            <p class="text-gray-600 text-lg mt-2">$89.99</p>
+                            <a href="product-detail.html" class="mt-4 inline-block px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-md hover:bg-gray-900">View Details</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1574180566236-054a1b5b31c1?auto=format&fit=crop&q=80&w=2574" alt="Stylish Overcoat" class="w-full h-80 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800">Stylish Overcoat</h3>
+                            <p class="text-gray-600 text-lg mt-2">$159.99</p>
+                            <a href="product-detail.html" class="mt-4 inline-block px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-md hover:bg-gray-900">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Shop by Category</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <a href="products.html" class="relative h-80 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?auto=format&fit=crop&q=80&w=2670" alt="Men's Collection" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center">
+                            <h3 class="text-white text-3xl font-bold">Men's</h3>
+                        </div>
+                    </a>
+                    <a href="products.html" class="relative h-80 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&q=80&w=2670" alt="Women's Collection" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center">
+                            <h3 class="text-white text-3xl font-bold">Women's</h3>
+                        </div>
+                    </a>
+                    <a href="products.html" class="relative h-80 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&q=80&w=2574" alt="Accessories Collection" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center">
+                            <h3 class="text-white text-3xl font-bold">Accessories</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-4 sm:px-6 lg:px-8 my-16">
+            <div class="relative h-80 rounded-lg shadow-lg overflow-hidden bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=2670');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-start p-8 md:p-16">
+                    <h2 class="text-white text-3xl md:text-5xl font-bold">Mid-Season Sale</h2>
+                    <p class="text-white text-lg md:text-2xl mt-3">Up to 40% off selected items.</p>
+                    <a href="products.html" class="mt-6 px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                        Shop Sale
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">What Our Customers Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100&h=100" alt="Customer Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Sarah K.</h4>
+                                <p class="text-sm text-gray-600">Verified Buyer</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-2">
+                            <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.965a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.445a1 1 0 00-.364 1.118l1.286 3.965c.3.921-.755 1.688-1.54 1.118l-3.368-2.445a1 1 0 00-1.176 0l-3.368 2.445c-.784.57-1.838-.197-1.54-1.118l1.286-3.965a1 1 0 00-.364-1.118L2.06 9.392c-.784-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.965z"></path></svg>
+                            <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.965a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.445a1 1 0 00-.364 1.118l1.286 3.965c.3.921-.755 1.688-1.54 1.118l-3.368-2.445a1 1 0 00-1.176 0l-3.368 2.445c-.784.57-1.838-.197-1.54-1.118l1.286-3.965a1 1 0 00-.364-1.118L2.06 9.392c-.784-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.965z"></path></svg>
+                            <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.965a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.445a1 1 0 00-.364 1.118l1.286 3.965c.3.921-.755 1.688-1.54 1.118l-3.368-2.445a1 1 0 00-1.176 0l-3.368 2.445c-.784.57-1.838-.197-1.54-1.118l1.286-3.965a1 1 0 00-.364-1.118L2.06 9.392c-.784-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.965z"></path></svg>
+                            <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.965a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.445a1 1 0 00-.364 1.118l1.286 3.965c.3.921-.755 1.688-1.54 1.118l-3.368-2.445a1 1 0 00-1.176 0l-3.368 2.445c-.784.57-1.838-.197-1.54-1.118l1.286-3.965a1 1 0 00-.364-1.118L2.06 9.392c-.784-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.965z"></path></svg>
+                            <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.965a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.445a1 1 0 00-.364 1.118l1.286 3.965c.3.921-.755 1.688-1.54 1.118l-3.368-2.445a1 1 0 00-1.176 0l-3.368 2.445c-.784.57-1.838-.197-1.54-1.118l1.286-3.965a1 1 0 00-.364-1.118L2.06 9.392c-.784-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.965z"></path></svg>
+                        </div>
+                        <p class="text-gray-700 italic">"Amazing quality! The fabric on the tee is so soft and the fit is perfect. Will definitely be shopping here again."</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100&h=100" alt="Customer Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Mark T.</h4>
+                                <p class="text-sm text-gray-600">Verified Buyer</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-2">
+                            <svg class...></svg>
+                            <svg class...></svg>
+                            <svg class...></svg>
+                            <svg class...></svg>
+                            <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.965a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.445a1 1 0 00-.364 1.118l1.286 3.965c.3.921-.755 1.688-1.54 1.118l-3.368-2.445a1 1 0 00-1.176 0l-3.368 2.445c-.784.57-1.838-.197-1.54-1.118l1.286-3.965a1 1 0 00-.364-1.118L2.06 9.392c-.784-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.965z"></path></svg>
+                        </div>
+                        <p class="text-gray-700 italic">"The sneakers I bought are stylish and surprisingly comfortable. Shipping was faster than expected."</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100&h=100" alt="Customer Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Emily R.</h4>
+                                <p class="text-sm text-gray-600">Verified Buyer</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-2">
+                            <svg class...></svg>
+                            <svg class...></svg>
+                            <svg class...></svg>
+                            <svg class...></svg>
+                            <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.965a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.445a1 1 0 00-.364 1.118l1.286 3.965c.3.921-.755 1.688-1.54 1.118l-3.368-2.445a1 1 0 00-1.176 0l-3.368 2.445c-.784.57-1.838-.197-1.54-1.118l1.286-3.965a1 1 0 00-.364-1.118L2.06 9.392c-.784-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.965z"></path></svg>
+                        </div>
+                        <p class="text-gray-700 italic">"I love the overcoat! It's so chic and warm. The customer service was also excellent when I had a question about sizing."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">New Arrivals</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1617137534538-75c3da63b15a?auto=format&fit=crop&q=80&w=2574" alt="Leather Bag" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800">Leather Crossbody</h3>
+                            <p class="text-gray-600 text-lg mt-2">$129.99</p>
+                            <a href="product-detail.html" class="mt-4 inline-block px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-md hover:bg-gray-900">View Details</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1593030364335-a12ea10b3793?auto=format&fit=crop&q=80&w=2574" alt="Canvas High-Tops" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800">Canvas High-Tops</h3>
+                            <p class="text-gray-600 text-lg mt-2">$79.99</p>
+                            <a href="product-detail.html" class="mt-4 inline-block px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-md hover:bg-gray-900">View Details</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&q=80&w=2670" alt="Organic Cotton Tees" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800">Organic Cotton Tee</h3>
+                            <p class="text-gray-600 text-lg mt-2">$24.99</p>
+                            <a href="product-detail.html" class="mt-4 inline-block px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-md hover:bg-gray-900">View Details</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=2520" alt="Urban Windbreaker" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800">Urban Windbreaker</h3>
+                            <p class="text-gray-600 text-lg mt-2">$99.99</p>
+                            <a href="product-detail.html" class="mt-4 inline-block px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-md hover:bg-gray-900">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">@EShop on Instagram</h2>
+                <p class="text-lg text-gray-600 text-center mb-8">Get inspired by our latest looks.</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <a href="#" class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=400" alt="Instagram Post 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    </a>
+                    <a href="#" class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1509631179668-42822a3e67ab?auto=format&fit=crop&q=80&w=400" alt="Instagram Post 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    </a>
+                    <a href="#" class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=400" alt="Instagram Post 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    </a>
+                    <a href="#" class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616f4b4e?auto=format&fit=crop&q=80&w=400" alt="Instagram Post 4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    </a>
+                    <a href="#" class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400" alt="Instagram Post 5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    </a>
+                    <a href="#" class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="httpsimg src="https://images.unsplash.com/photo-1492707892479-7bc8d5a41638?auto=format&fit=crop&q=80&w=400" alt="Instagram Post 6" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    </a>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="#" class="px-8 py-3 bg-gray-800 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300">
+                        Follow Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-800 text-white py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-4">Join Our Newsletter</h2>
+                <p class="text-lg text-gray-300 mb-8">Get exclusive deals and be the first to know about new arrivals.</p>
+                <form class="flex flex-col md:flex-row justify-center max-w-lg mx-auto">
+                    <input type="email" placeholder="Enter your email" class="w-full md:w-2/3 px-4 py-3 rounded-lg md:rounded-r-none text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    <button type="submit" class="w-full md:w-1/3 mt-3 md:mt-0 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg md:rounded-l-none shadow-md hover:bg-blue-700 transition duration-300">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="about.html" class="hover:text-gray-400">About Us</a>
+                <a href="#" class="hover:text-gray-400">Contact</a>
+                <a href="#" class="hover:text-gray-400">FAQ</a>
+                <a href="#" class="hover:text-gray-400">Shipping & Returns</a>
+            </div>
+            <p class="text-gray-500 mt-4">&copy; 2025 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

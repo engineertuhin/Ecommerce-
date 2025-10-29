@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop - Explore Collections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-900">E-Shop</a>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="products.html" class="text-gray-700 hover:text-blue-600">Shop</a>
+                <a href="categories.html" class="text-gray-700 hover:text-blue-600 font-medium">Categories</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+                <a href="cart.html" class="flex items-center text-gray-700 hover:text-blue-600">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <span class="ml-1 bg-blue-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="products.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Shop</a>
+            <a href="categories.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Categories</a>
+            <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="cart.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Cart (3)</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-10 text-center">Explore Our Collections</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="relative h-96 rounded-lg shadow-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80&w=2572&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Men's Apparel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center p-6">
+                    <h2 class="text-white text-4xl font-extrabold text-center">Men's Apparel</h2>
+                    <a href="products.html" class="mt-6 px-6 py-3 bg-white text-gray-900 text-base font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative h-96 rounded-lg shadow-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1529139574466-a36c687791f4?auto=format&fit=crop&q=80&w=2574&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Women's Fashion" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center p-6">
+                    <h2 class="text-white text-4xl font-extrabold text-center">Women's Fashion</h2>
+                    <a href="products.html" class="mt-6 px-6 py-3 bg-white text-gray-900 text-base font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative h-96 rounded-lg shadow-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1563297059-8ed60741639d?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accessories" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center p-6">
+                    <h2 class="text-white text-4xl font-extrabold text-center">Accessories</h2>
+                    <a href="products.html" class="mt-6 px-6 py-3 bg-white text-gray-900 text-base font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative h-96 rounded-lg shadow-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1621946864436-1e0f0c0f0a4f?auto=format&fit=crop&q=80&w=2574&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Footwear" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center p-6">
+                    <h2 class="text-white text-4xl font-extrabold text-center">Footwear</h2>
+                    <a href="products.html" class="mt-6 px-6 py-3 bg-white text-gray-900 text-base font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="about.html" class="hover:text-gray-400">About Us</a>
+                <a href="#" class="hover:text-gray-400">Contact</a>
+                <a href="#" class="hover:text-gray-400">FAQ</a>
+                <a href="#" class="hover:text-gray-400">Shipping & Returns</a>
+            </div>
+            <p class="text-gray-500 mt-4">&copy; 2025 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

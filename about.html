@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-900">E-Shop</a>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="products.html" class="text-gray-700 hover:text-blue-600">Shop</a>
+                <a href="categories.html" class="text-gray-700 hover:text-blue-600">Categories</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About Us</a>
+                <a href="cart.html" class="flex items-center text-gray-700 hover:text-blue-600">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <span class="ml-1 bg-blue-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="products.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Shop</a>
+            <a href="categories.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Categories</a>
+            <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="cart.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Cart (3)</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative h-96 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97375cd06?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+                <h1 class="text-white text-5xl md:text-6xl font-bold text-center">About Our Store</h1>
+            </div>
+        </section>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <section class="bg-white p-8 md:p-12 rounded-lg shadow-lg max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6 text-center">Our Story</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                </p>
+            </section>
+
+            <section class="bg-gray-100 p-8 md:p-12 rounded-lg shadow-lg max-w-4xl mx-auto mt-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6 text-center">Our Commitment</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                </p>
+            </section>
+
+            <section class="mt-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-10 text-center">Meet the Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200&h=200" alt="Team Member 1" class="w-40 h-40 rounded-full mx-auto object-cover shadow-lg border-4 border-white">
+                        <h3 class="text-2xl font-semibold text-gray-900 mt-4">Jane Doe</h3>
+                        <p class="text-gray-600 text-lg">Founder & CEO</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200" alt="Team Member 2" class="w-40 h-40 rounded-full mx-auto object-cover shadow-lg border-4 border-white">
+                        <h3 class="text-2xl font-semibold text-gray-900 mt-4">John Smith</h3>
+                        <p class="text-gray-600 text-lg">Head of Design</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200" alt="Team Member 3" class="w-40 h-40 rounded-full mx-auto object-cover shadow-lg border-4 border-white">
+                        <h3 class="text-2xl font-semibold text-gray-900 mt-4">Emily White</h3>
+                        <p class="text-gray-600 text-lg">Marketing Director</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="about.html" class="hover:text-gray-400">About Us</a>
+                <a href="#" class="hover:text-gray-400">Contact</a>
+                <a href="#" class="hover:text-gray-400">FAQ</a>
+                <a href="#" class="hover:text-gray-400">Shipping & Returns</a>
+            </div>
+            <p class="text-gray-500 mt-4">&copy; 2025 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

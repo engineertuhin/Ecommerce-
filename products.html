@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop - Shop All Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-900">E-Shop</a>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="products.html" class="text-blue-600 font-medium">Shop</a>
+                <a href="categories.html" class="text-gray-700 hover:text-blue-600">Categories</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+                <a href="cart.html" class="flex items-center text-gray-700 hover:text-blue-600">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <span class="ml-1 bg-blue-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+            <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="products.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-gray-100">Shop</a>
+            <a href="categories.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Categories</a>
+            <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="cart.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Cart (3)</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative h-72 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&q=80&w=2670');">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+                <h1 class="text-white text-5xl md:text-6xl font-bold text-center">Shop All Products</h1>
+                <p class="text-white text-lg md:text-xl mt-3 text-center">Find your new favorite items in our collection.</p>
+            </div>
+        </section>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row gap-10">
+                
+                <aside class="w-full md:w-1/4 lg:w-1/5">
+                    <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 md:sticky md:top-28">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-200">Filter by Category</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="block py-1 text-blue-600 font-medium">All</a></li>
+                                <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600 hover:font-medium">Men's</a></li>
+                                <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600 hover:font-medium">Women's</a></li>
+                                <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600 hover:font-medium">Accessories</a></li>
+                                <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600 hover:font-medium">Footwear</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-200">Filter by Price</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600 hover:font-medium">$0 - $50</a></li>
+                                <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600 hover:font-medium">$50 - $100</a></li>
+                                <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600 hover:font-medium">$100 - $150</a></li>
+                                <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600 hover:font-medium">$150+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="w-full md:w-3/4 lg:w-4/5">
+                    <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+                        
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&q=80&w=870" alt="Gray Hoodie" class="w-full h-72 object-cover">
+                            </a>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Casual Gray Hoodie</h3>
+                                <p class="text-gray-600 mt-1">$59.99</p>
+                                <a href="product-detail.html" class="mt-3 inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1583743814966-8936f5b751af?auto=format&fit=crop&q=80&w=387" alt="Black T-Shirt" class="w-full h-72 object-cover">
+                            </a>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Classic Black Tee</h3>
+                                <p class="text-gray-600 mt-1">$19.99</p>
+                                <a href="product-detail.html" class="mt-3 inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1602293589930-45a9ec8926c9?auto=format&fit=crop&q=80&w=387" alt="Blue Jeans" class="w-full h-72 object-cover">
+                            </a>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Slim-Fit Blue Jeans</h3>
+                                <p class="text-gray-600 mt-1">$79.99</p>
+                                <a href="product-detail.html" class="mt-3 inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1591995881838-c6b91b8f0a7b?auto=format&fit=crop&q=80&w=387" alt="Denim Jacket" class="w-full h-72 object-cover">
+                            </a>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Faded Denim Jacket</h3>
+                                <p class="text-gray-600 mt-1">$89.99</p>
+                                <a href="product-detail.html" class="mt-3 inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&q=80&w=725" alt="White Sneakers" class="w-full h-72 object-cover">
+                            </a>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Minimal White Sneakers</h3>
+                                <p class="text-gray-600 mt-1">$120.00</p>
+                                <a href="product-detail.html" class="mt-3 inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700">View Details</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80&w=880" alt="Stylish Watch" class="w-full h-72 object-cover">
+                            </a>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Classic Chrono Watch</h3>
+                                <p class="text-gray-600 mt-1">$199.99</p>
+                                <a href="product-detail.html" class="mt-3 inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700">View Details</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1572804013427-4d7ca726b655?auto=format&fit=crop&q=80&w=387" alt="Summer Dress" class="w-full h-72 object-cover">
+                            </a>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Floral Summer Dress</h3>
+                                <p class="text-gray-600 mt-1">$69.99</p>
+                                <a href="product-detail.html" class="mt-3 inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700">View Details</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?auto=format&fit=crop&q=80&w=387" alt="Wool Beanie" class="w-full h-72 object-cover">
+                            </a>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Cozy Wool Beanie</h3>
+                                <p class="text-gray-600 mt-1">$24.99</p>
+                                <a href="product-detail.html" class="mt-3 inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center space-x-1 mt-12">
+                        <a href="#" class="flex items-center px-4 py-2 border border-gray-300 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                            </svg>
+                            <span class="hidden sm:inline ml-1">Previous</span>
+                        </a>
+                        <a href="#" class="px-4 py-2 border border-blue-600 bg-blue-600 text-white rounded-md z-10 relative">1</a>
+                        <a href="#" class="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 hover:text-gray-900">2</a>
+                        <a href="#" class="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 hover:text-gray-900">3</a>
+                        <a href="#" class="flex items-center px-4 py-2 border border-gray-300 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                            <span class="hidden sm:inline mr-1">Next</span>
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="about.html" class="hover:text-gray-400">About Us</a>
+                <a href="#" class="hover:text-gray-400">Contact</a>
+                <a href="#" class="hover:text-gray-400">FAQ</a>
+                <a href="#" class="hover:text-gray-400">Shipping & Returns</a>
+            </div>
+            <p class="text-gray-500 mt-4">&copy; 2025 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
